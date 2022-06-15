@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="gnav">
+            剩余：<input type="text" id="mine_total" value="0">
+            <input type="radio" name="'leve1" id="lv-1" onchange='g_init(0)' checked="checked">
+            <label for="lv-1">初级</label>
+            <input type="radio" name="'leve1" id="lv-2" onchange='g_init(1)'>
+            <label for="lv-2">中级</label>
+            <input type="radio" name="'leve1" id="lv-3" onchange='g_init(2)'>
+            <label for="lv-3">高级</label>
+            <button id="btn" onclick="g_init()">重新开始</button>
+        </div>
+        <canvas id="mycanv" height="800" width="1500"></canvas>
+    </div>
+
+    <script src="./index.js"> </script>
+</body>
+
+</html>
